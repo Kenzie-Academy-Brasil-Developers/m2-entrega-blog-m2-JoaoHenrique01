@@ -20,4 +20,22 @@ export class ApiRequests {
             .catch(error => console.log(error))
             return userLogin
     }
+
+
+    static async createUser(body) {
+        const newUser = await fetch(`${this.baseUrl}/users/register`, {
+            method: "POST",
+            headers: this.headers,
+            body: JSON.stringify(body)
+        })
+            .then(response => response.json())
+            .then(response => {
+                window.location.assign("../../index.html")
+
+            return response
+            })
+            .catch(error => console.log(error)) 
+
+        return newUser
+    }
 }
