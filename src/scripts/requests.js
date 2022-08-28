@@ -15,7 +15,8 @@ export class ApiRequests {
             .then(response => response.json())
             .then(response => {
                 localStorage.setItem("@blog_m2:token", response.token)
-                localStorage.setItem("@blog_m2:User_id", response.user.id)
+                localStorage.setItem("@blog_m2:User_id", response.userId)
+                window.location.assign("src/pages/dashboard.html")
             })
             .catch(error => console.log(error))
             return userLogin
