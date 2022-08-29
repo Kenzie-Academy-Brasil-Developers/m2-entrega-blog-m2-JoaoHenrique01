@@ -3,7 +3,7 @@ export class ApiRequests {
     static token = localStorage.getItem("@blog_m2:token") || ""
     static headers = {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${this.token}`
+        "Authorization": `Bearer ${this.token}`
     }
 
     static async login(body) {
@@ -19,6 +19,7 @@ export class ApiRequests {
                 window.location.assign("src/pages/dashboard.html")
             })
             .catch(error => console.log(error))
+            console.log(response)
             return userLogin
     }
 
@@ -39,4 +40,26 @@ export class ApiRequests {
 
         return newUser
     }
+
+    static async getPosts() {
+        const posts = await fetch(`${this.baseUrl}/posts?page=1`, { //O número é referente à página.
+            method: "GET",
+            headers: this.headers,
+        }) 
+            .then(response => response.json())
+            .catch(error => console.log(error))
+            return posts.data
+    }
+
+    static async createPost(data) {
+        const post = await fetch(`${this.baseUrl}/posts`, {
+            method: "POST",
+            headers: this.headers,
+            body: JSON.stringify(data)
+        })
+            .then(response => response.json())
+            .catch(error => console.log(error))
+            return post
+    }
 }
+
