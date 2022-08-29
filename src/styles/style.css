@@ -42,7 +42,7 @@ p{
   display: flex;
   height: 150px;
   width: 600px;
-  background-color: red;
+  background-color: whitesmoke;
   align-content: center;
   justify-content: center;
   flex-wrap: wrap;
@@ -81,7 +81,7 @@ p{
   flex-direction: row;
   margin-bottom: 30px;
   flex-wrap: wrap;
-  background-color: aqua;
+  background-color: whitesmoke;
   height: 150px;
   width: 600px;
   margin-top: 40px;
