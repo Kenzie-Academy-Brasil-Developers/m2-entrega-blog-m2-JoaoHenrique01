@@ -6,7 +6,6 @@ export class ApiRequests {
 
         "Authorization": `Bearer ${this.token}`
 
-        Authorization: `Bearer ${this.token}`
 
     }
 
@@ -27,14 +26,14 @@ export class ApiRequests {
             console.log(response)
 
                 localStorage.setItem("@blog_m2:User_id", response.user.id)
-            })
-            .catch(error => console.log(error))
-
+            }
+        }
             return userLogin
-    }
+    
 
 
-    static async createUser(body) {
+
+     static async createUser(body) {
         const newUser = await fetch(`${this.baseUrl}/users/register`, {
             method: "POST",
             headers: this.headers,
@@ -47,10 +46,11 @@ export class ApiRequests {
             return response
             })
             .catch(error => console.log(error)) 
+        }
+        
+     }
 
-        return newUser
-    }
-
+    return newUser
 
     static async getPosts() {
         const posts = await fetch(`${this.baseUrl}/posts?page=1`, { //O número é referente à página.
@@ -72,7 +72,8 @@ export class ApiRequests {
             .catch(error => console.log(error))
             return post
     }
-}
+
+ 
 
 
 }

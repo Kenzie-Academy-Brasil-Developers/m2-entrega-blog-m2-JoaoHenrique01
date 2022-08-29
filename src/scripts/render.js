@@ -25,8 +25,7 @@ export class Render {
 
         buttonEdit.classList.add("modalEditButton")
         buttonDelete.classList.add("modalDeleteButton")
-        // spanEdit.classList.add("modalEditButton") //Parte referente o modal no css.
-        // spanEdit.id = post.id
+ 
 
         img.src = post.user.avatarUrl
         h1.innerText = post.user.username

@@ -33,13 +33,11 @@ class Dashboard {
             modal.classList.toggle("hidden")
             const posts = await ApiRequests.getPosts()
             this.renderDashboard(posts)
-            // Modal.showModal()
-            // Modal.closeModal()
             Dashboard.createPost
         })
     }
 }
 
 const posts = await ApiRequests.getPosts()
-console.log(posts)
+// console.log(posts)
 Dashboard.renderDashboard(posts)

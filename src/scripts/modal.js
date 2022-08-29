@@ -13,7 +13,5 @@ export class Modal {
         } )
     }
 
-//     static closeModal() {
-//         const clo
-//     }
+
 }
