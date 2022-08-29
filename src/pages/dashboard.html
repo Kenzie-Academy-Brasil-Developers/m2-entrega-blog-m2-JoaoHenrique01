@@ -27,8 +27,24 @@
                 <button type="submit"> Postar</button>
             </div>
             <div class="main__container__posts"> 
+                <ul id="postsList">
 
+                </ul>
             </div>
-        </main>        
-    </body>
+        </main>  
+
+        <section class="modal_hidden">
+            <h1> Editar </h1>
+            <textarea id="editarHistoria" rows="5" cols="30" placeholder="Estou mudando meu comentario"></textarea>
+            <button type="submit" id="enviarEdicao"> Enviar </button>
+
+        </section>
+
+        <section class="modal_hidden">
+            <h1> Deseja deletar esse post? </h1>
+            <button type="submit" id="deletePost"> Deletar </button>
+
+        </section>
+
+        <script type="module" src="../scripts/dashboard.js"></script>
 </html>
