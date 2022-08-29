@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Clicker+Script&display=swap");
+
+html{
+    height: auto;
+    width: auto;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(238, 238, 238);
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  background-color:whitesmoke;
+  align-items: center;
+  width: 100%;
+  height: 75px;
+  
+}
+.container{
+  display: flex;
+  justify-content:center;
+  translate: 1px;
+  align-items: center;
+}
+.logo{
+  margin-left: 100px;
+  height: 75px;
+}
+p{
+  margin-left: 7px;
+}
+
+#buttonLogout{
+  margin-right: 50px;
+  height: 40px;
+  width: 75px;
+  border-radius: 15px;
+}
+.posta{
+  display: flex;
+  height: 150px;
+  width: 600px;
+  background-color: red;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  flex-direction: column;
+  border-radius: 9px;
+  
+}
+#postagem{
+  height: 60px;
+  width: 320px;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 195px;
+}
+.post{
+  margin-left: 195px;
+}
+#historia{
+  height: 80px;
+  width: 320px;
+  border-radius: 5px;
+}
+.main__container {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.main__container__header {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  background-color: aqua;
+  height: 150px;
+  width: 600px;
+  margin-top: 40px;
+  border-radius: 5px;
+}
+h1{
+  margin-right: 5px;
+}
+button{
+  color: white;
+  background-color: gray;
+  border-radius: 7px;
+  border-color: transparent;
+}
+button:hover{
+  background-color: green;
+}
+button:active{
+  background-color: rgb(5, 114, 5);
+}
+
+@media (max-width: 421px){
+
+  html{
+    height: 100%;
+    width: 100%;
+  }
+  header{
+  display: flex;
+  justify-content: center;
+  background-color:whitesmoke;
+  width: 550px;
+  height: 75px;
+}
+.container{
+  display: flex;
+  justify-content:center;
+  translate: 1px;
+  align-items: center;
+}
+.logo{
+  height: 50px;
+}
+p{
+  margin-left: 5px;
+}
+#buttonLogout{
+  margin-left: 50px;
+}
+.posta{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  width: 450px;
+  margin-left: 85px;
+}
+
+img{
+margin-top: 10px;
+}
+.perfil{
+  margin-top: 10px;
+  height: 55px;
+}
+.main__container__header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: aqua;
+  height: 270px;
+  width: 450px;
+  margin-top: 40px;
+  border-radius: 5px;
+  align-content: center;
+  margin-left: 85px;
+}
+
+.main__container__historia{
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.main__container {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    align-content: stretch;
+    flex-direction: column;
+}
+#historia{
+  height: 70px;
+  width: 270px;
+}
+#postagem{
+  height: 70px;
+  width: 270px;
+  margin-right: 185px;
+}
+.post{
+  margin-right: 185px;
+}
+}  
+@media (max-width: 500px){
+.posta{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  width: 400px;
+}
+.perfil{
+margin-top: 10px;
+height: 55px;
+}
+.main__container__header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: aqua;
+  height: 220px;
+  width: 400px;
+  margin-top: 40px;
+  border-radius: 5px;
+  align-content: center;
+}
+
+.main__container__historia{
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.main__container {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    align-content: stretch;
+    flex-direction: column;
+}
+#historia{
+  height: 70px;
+  width: 270px;
+}
+#postagem{
+  height: 70px;
+  width: 270px;
+  margin-right: 185px;
+}
+.post{
+  margin-right: 185px;
+}
+}
